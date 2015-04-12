@@ -2,8 +2,6 @@ package com.frantzoe.stock;
 
 import java.util.ArrayList;
 
-import android.app.Activity;
-import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
@@ -158,7 +156,7 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View view = inflater.inflate(R.layout.fragment_ajouter, container, false);
             //Instantiation de la BDD
-            this.mabdd = new MaBDD(getActivity(), null, null, 1);
+            this.mabdd = new MaBDD(getActivity());
             this.etLibelle = (EditText) view.findViewById(R.id.etLibelle);
             this.etQuantite = (EditText) view.findViewById(R.id.etQuantite);
             this.btAjouter = (Button) view.findViewById(R.id.btAjouter);
@@ -251,7 +249,7 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             final View view = inflater.inflate(R.layout.fragment_afficher, container, false);
             //Instantiation de la BDD
-            this.mabdd = new MaBDD(getActivity(), null, null, 1);
+            this.mabdd = new MaBDD(getActivity());
             this.produits = new ArrayList<>();
             this.radioGroup = (RadioGroup) view.findViewById(R.id.radioGroup);
             this.lvProduit = (ListView) view.findViewById(R.id.lvProduit);
