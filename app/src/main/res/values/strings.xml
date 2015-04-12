@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Stock</string>
+
+    <string name="titre_section1">Ajouter</string>
+    <string name="titre_section2">Afficher</string>
+
+    <string name="hello_world">Hello World!</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="ajouter_produit">Ajouter Un Produit</string>
+    <string name="hint_libelle">Libellé</string>
+    <string name="hint_quantite">Quantité</string>
+    <string name="bouton_ajouter">Ajouter</string>
+    <string name="bouton_afficher">Afficher</string>
+    <string name="bouton_rupture">Rupture</string>
+</resources>
