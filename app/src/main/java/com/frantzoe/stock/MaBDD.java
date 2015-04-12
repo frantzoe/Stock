@@ -20,8 +20,8 @@ public class MaBDD extends SQLiteOpenHelper {
     public static final String COLUMN_NOM = "nomproduit";
     public static final String COLUMN_QUANTITE = "quantiteproduit";
 
-    public MaBDD(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, BDD_NOM, factory, BDD_VERSION);
+    public MaBDD(Context context) {
+        super(context, BDD_NOM, null, BDD_VERSION);
     }
 
     @Override
