@@ -52,7 +52,7 @@ public class MaBDD extends SQLiteOpenHelper {
 
     public ArrayList<Produit> tousLesProduits(){
         ArrayList<Produit> dbProductsArray = new ArrayList<>();
-        Cursor cursor = getReadableDatabase().rawQuery("SELECT * FROM " + TABLE_PRODUITS + " WHERE 1 ORDER BY " + COLUMN_NOM, null);
+        Cursor cursor = getReadableDatabase().rawQuery("SELECT * FROM " + TABLE_PRODUITS + " ORDER BY " + COLUMN_NOM, null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             if (cursor.getString(cursor.getColumnIndex(COLUMN_NOM)) != null){
